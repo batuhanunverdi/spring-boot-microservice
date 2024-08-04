@@ -1,4 +1,4 @@
-package org.example;
+package org.example.fraud;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

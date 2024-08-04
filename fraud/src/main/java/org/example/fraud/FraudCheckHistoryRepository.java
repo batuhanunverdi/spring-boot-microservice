@@ -1,4 +1,4 @@
-package org.example;
+package org.example.fraud;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
