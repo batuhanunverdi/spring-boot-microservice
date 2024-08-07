@@ -3,8 +3,8 @@ services:
     container_name: postgres
     image: postgres
     environment:
-      POSTGRES_USER: *****
-      POSTGRES_PASSWORD: *****
+      POSTGRES_USER: postres
+      POSTGRES_PASSWORD: Sanane5885
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres
@@ -27,6 +27,12 @@ services:
       - "5050:80"
     networks:
       - postgres
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
 
 networks:
   postgres:
